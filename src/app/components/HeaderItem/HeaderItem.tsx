@@ -8,9 +8,15 @@ interface HeaderItemProps extends LinkProps {
 
 export function HeaderItem({ href, text }: HeaderItemProps) {
   return (
-    <Link href={href} className='flex items-center gap-2 px-3 py-5 leading-5'>
+    <Link
+      href={href}
+      className='group flex items-center gap-2 px-3 py-5 leading-5'
+    >
       {text}
-      <ArrowDownCircleIcon size={16} />
+      <ArrowDownCircleIcon
+        size={16}
+        className='transition-transform duration-300 group-hover:rotate-180'
+      />
     </Link>
   )
 }

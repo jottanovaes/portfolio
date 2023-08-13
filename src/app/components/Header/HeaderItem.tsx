@@ -10,12 +10,12 @@ export function HeaderItem({ href, text }: HeaderItemProps) {
   return (
     <Link
       href={href}
-      className='group flex items-center gap-2 px-3 py-5 leading-5'
+      className='group flex items-center gap-2 py-5 leading-5 sm:px-3'
     >
       {text}
       <ArrowDownCircleIcon
         size={16}
-        className='transition-transform duration-300 group-hover:rotate-180'
+        className='hidden transition-transform duration-300 group-hover:rotate-180 sm:block'
       />
     </Link>
   )

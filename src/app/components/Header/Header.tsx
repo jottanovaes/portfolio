@@ -11,8 +11,8 @@ import { Menu, X } from 'lucide-react'
 
 export function Header() {
   return (
-    <div className='fixed w-full select-none bg-white'>
-      <nav className='relative mx-6 my-2 flex items-center justify-between sm:container sm:mx-auto'>
+    <div className='sticky top-0 w-full select-none bg-white'>
+      <nav className='mx-6 my-2 flex items-center justify-between sm:container sm:mx-auto'>
         <Link href='#'>
           <Image src={logo} width={40} height={40} alt='logo' />
         </Link>
@@ -36,7 +36,7 @@ export function Header() {
           <X className='' />
         </label>
 
-        <ul className='hidden items-center gap-6 rounded border-2 border-black transition-all duration-300 peer-checked:absolute peer-checked:right-0 peer-checked:top-10 peer-checked:block peer-checked:border-black sm:flex sm:border-none sm:peer-checked:static sm:peer-checked:flex'>
+        <ul className='hidden items-center gap-6 rounded border-2 border-black bg-white transition-all duration-300 peer-checked:absolute peer-checked:right-6 peer-checked:top-10 peer-checked:block peer-checked:border-black sm:flex sm:border-none sm:peer-checked:static sm:peer-checked:flex'>
           <li className='list-none px-12 pl-6 hover:bg-gray-100 sm:px-0 sm:hover:bg-transparent'>
             <HeaderItem href='#' text='projects' />
           </li>

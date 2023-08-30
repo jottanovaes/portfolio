@@ -5,7 +5,7 @@ import { Header } from './components/Header/Header'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'j - p o r t f o l i o',
+  title: 'j',
   description: 'A Developer Personal Portfolio',
 }
 
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en'>
+    <html lang='en' className='scroll-smooth'>
       <head>
         <link rel='icon' href='/favicon.ico' sizes='any' />
       </head>

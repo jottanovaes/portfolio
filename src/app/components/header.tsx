@@ -22,24 +22,24 @@ function Header() {
         </a>
       </div>
       <nav className='flex items-center justify-center gap-4 text-base font-bold text-gray-400 '>
-        <Link
+        <a
           href='#about'
           className='transition-all duration-300 hover:text-black hover:underline'
         >
           about
-        </Link>
-        <Link
+        </a>
+        <a
           href='#experiences'
           className='transition-all duration-300 hover:text-black hover:underline'
         >
           experiences
-        </Link>
-        <Link
+        </a>
+        <a
           href='#projects'
           className='transition-all duration-300 hover:text-black hover:underline'
         >
           projects
-        </Link>
+        </a>
       </nav>
     </header>
   )

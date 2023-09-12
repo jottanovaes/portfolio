@@ -1,13 +1,18 @@
 import { Inter } from 'next/font/google'
+import Header from './components/header'
+import About from './components/about'
+import Experiences from './components/experiences'
+import Projects from './components/projects'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export default function Home() {
   return (
-    <main className={`${inter.variable}`}>
-      {/* <h1>
-        Oi, <span>icon</span>Eu sou o Jotta.
-      </h1> */}
+    <main className={`${inter.variable} container mx-auto px-12 py-7`}>
+      <Header />
+      <About />
+      <Experiences />
+      <Projects />
     </main>
   )
 }

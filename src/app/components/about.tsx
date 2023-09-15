@@ -2,8 +2,9 @@ function About() {
   return (
     <section
       id='about'
-      className='mt-8 flex flex-col gap-4 text-base leading-relaxed'
+      className='flex flex-col gap-4 text-base leading-relaxed lg:max-w-xl'
     >
+      <h2 className='font-bold'>About</h2>
       <p>
         So, I started out in biology, but guess what? I stumbled upon my real
         passion: algorithms and coding! I completed the FullStack Trybe course,

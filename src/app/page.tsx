@@ -10,11 +10,15 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export default function Home() {
   return (
-    <main className={`${inter.variable} container mx-auto px-12 py-7`}>
+    <main
+      className={`${inter.variable} container mx-auto px-12 py-7 lg:flex lg:max-h-screen`}
+    >
       <Header />
-      <About />
-      <Experiences />
-      <Projects />
+      <section className='no-scrollbar flex flex-1 flex-col gap-10 overflow-y-scroll pt-8 lg:pt-0'>
+        <About />
+        <Experiences />
+        <Projects />
+      </section>
     </main>
   )
 }

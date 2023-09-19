@@ -35,9 +35,10 @@ function stringToDate(date: string) {
 export function Card({ startDate, href, title, description, endDate }: Props) {
   return (
     <div className='flex w-full flex-col gap-2 lg:flex-row'>
-      <span className='w-fit whitespace-nowrap text-sm font-bold leading-normal text-gray-500'>
+      <span className='w-fit min-w-[100px] whitespace-nowrap text-sm font-bold leading-normal text-gray-500'>
         {stringToDate(startDate)}
         &nbsp;&mdash;&nbsp;
+        <br className='hidden lg:block' />
         {endDate ? `${stringToDate(endDate)}` : 'PRESENT'}
       </span>
       <Link

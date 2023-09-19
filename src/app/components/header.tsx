@@ -5,7 +5,7 @@ import { NavItem } from './nav-item'
 
 function Header() {
   return (
-    <header className='flex flex-1 flex-col gap-7 lg:justify-between lg:py-20'>
+    <header className='flex flex-col gap-7 bg-white lg:sticky lg:top-0 lg:max-h-screen lg:flex-1 lg:flex-col lg:justify-between lg:py-20'>
       <div className='flex flex-col gap-7'>
         <div className='flex w-fit flex-col gap-3'>
           <h1 className='text-4xl font-bold'>Jotta Novaes</h1>
@@ -26,7 +26,7 @@ function Header() {
       <nav className='flex items-center justify-center gap-4 text-base font-bold text-gray-400 lg:w-fit lg:flex-col lg:items-start'>
         <NavItem href='#about' text='about' />
         <NavItem href='#experiences' text='experiences' />
-        <NavItem href='#projects' text='projects' />
+        <NavItem href='#posts' text='posts' />
       </nav>
     </header>
   )

@@ -2,7 +2,7 @@ import { Card } from './card'
 
 const desc =
   'EcoHub connects eco-enthusiasts worldwide. Dive into sustainability, collaborate on green projects, access resources, and find eco-friendly products. Join us today and be the change.'
-function Projects() {
+function Posts() {
   return (
     <section id='projects' className='flex flex-col items-start gap-8'>
       <h2 className='font-bold'>Projects</h2>
@@ -28,4 +28,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Posts

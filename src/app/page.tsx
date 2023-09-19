@@ -1,8 +1,7 @@
 import { Inter } from 'next/font/google'
-import Header from './components/header'
 import About from './components/about'
 import Experiences from './components/experiences'
-import Projects from './components/projects'
+import Posts from './components/projects'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
@@ -11,14 +10,11 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 export default function Home() {
   return (
     <main
-      className={`${inter.variable} container mx-auto px-12 py-7 lg:flex lg:max-h-screen`}
+      className={`${inter.variable} lg:py-17 gap-7 bg-white lg:flex lg:flex-1 lg:flex-col`}
     >
-      <Header />
-      <section className='no-scrollbar flex flex-1 flex-col gap-10 overflow-y-scroll pt-8 lg:pt-0'>
-        <About />
-        <Experiences />
-        <Projects />
-      </section>
+      <About />
+      <Experiences />
+      <Posts />
     </main>
   )
 }
